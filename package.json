@@ -1,7 +1,7 @@
 {
-  "name": "shaka-player",
-  "description": "DASH/EME video player library",
-  "version": "2.2.0",
+  "name": "shaka-player-hv",
+  "description": "DASH/EME video player library, Fork",
+  "version": "0.0.6",
   "homepage": "https://github.com/google/shaka-player",
   "author": "Google",
   "maintainers": [
@@ -37,7 +37,7 @@
     "useragent": "~2.1.13",
     "which": "~1.3.0"
   },
-  "main": "dist/shaka-player.compiled.js",
+  "main": "dist/shaka-player.compiled.debug.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/google/shaka-player.git"
@@ -47,6 +47,6 @@
   },
   "license": "Apache-2.0",
   "scripts": {
-    "prepublish": "in-publish && python ./build/checkversion.py && python ./build/all.py --force || not-in-publish"
+    "prepublish": "in-publish && python ./build/all.py --force || not-in-publish"
   }
 }
